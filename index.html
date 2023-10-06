@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto integrador Front | Tali Walkiria Itkin</title>
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/estilos.css">
+    </head>   
+    <body>
+        <header class="header">
+            <section class="headerNav">
+                    <div class="cac">
+                        <a href="#">
+                        <img src="./assets/img/codoacodo.png " alt="logo de codo a codo 2.0">
+                        </a>
+                        <h2 class="ConfBsAs colorWhite">Conf Bs As</h2>
+                    </div>
+                    <div>
+                        <nav>
+                            <ul  class="headerList">
+                                    <li><a class="colorWhite listaLink" href="#conferencia">La conferencia</a></li>
+                                    <li><a class="colorGrey listaLink" href="#oradores">Los oradores</a></li>
+                                    <li><a class="colorGrey listaLink" href="#lugarfecha">El lugar y la fecha</a></li>
+                                    <li><a class="colorGrey listaLink" href="#formularioOrador">Conviértete en orador</a></li>
+                                    <li><a class="colorGreen listaLink" href="./pages/tickets.html">Comprar tickets</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+            </section>
+            <section class="conferencia colorWhite" id="conferencia">
+                <h1 class="conferenciaTitulo">Conferencia Bs As</h1>
+                <p class="conferenciaParrafo">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a los miembros del evento, otros compañeros de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te esperamos!</p>
+                <div class="conferenciaBottom">
+                    <a class="colorWhite conferenciaBottomOrador listaLink" href="#formularioOrador"">Quiero ser orador</a>
+                    <a class="colorWhite conferenciaBottomTickets listaLink" href="./pages/tickets.html">Comprar tickets</a>
+                </div>
+            </section>
+        </header>
+        
+        <main>
+            <section class="oradores" id="oradores">
+                <h2 class="oradoresTitle"><div>CONOCE A LOS</div>ORADORES</h2>
+                <div>
+                    <div class="card">
+                        <img src="./assets/img/steve.jpg" alt="Steve Jobs con un celular en la mano" loading="lazy">
+                        <div class="bodyCard">
+                            <h4 class="backgroundYellow colorBlack">JavaScript</h4>
+                            <h4 class="backgroundLightBlue colorWhite">React</h4>
+                            <h3 class="oradoresName">Steve Jobs</h3>
+                            <p>La leyenda de Apple se presenta ante nosotros para compartir sus nuevos proyectos.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa error sequi ab dolorum molestias deserunt id officia maiores, aspernatur rerum veritatis nesciunt iusto, recusandae, debitis perspiciatis autem! Optio, ratione?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/bill.jpg" alt="Bill Gates con sus manos entrelazadas por delante de su cuerpo" loading="lazy">
+                        <div class="bodyCard">
+                            <h4 class="backgroundYellow colorBlack">JavaScript</h4>
+                            <h4 class="backgroundLightBlue colorWhite">React</h4>
+                            <h3 class="oradoresName">Bill Gates</h3>
+                            <p>El cofundador de Microsoft hablará sobre el futuro de los puestos de trabajo por fuera de la tecnología</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa error sequi ab dolorum molestias deserunt id officia maiores, aspernatur rerum veritatis nesciunt iusto, recusandae, debitis perspiciatis autem! Optio, ratione?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/img/ada.jpeg" alt="Ada Lovelace de perfil" loading="lazy">
+                        <div class="bodyCard">
+                            <h4 class="backgroundGrey colorWhite">Negocios</h4>
+                            <h4 class="backgroundRed colorWhite">Startups</h4>
+                            <h3 class="oradoresName">Ada Lovelace</h3>
+                            <p>La primera programadora brindará una conferencia motivadora para los nuevos desarrolladores</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa error sequi ab dolorum molestias deserunt id officia maiores, aspernatur rerum veritatis nesciunt iusto, recusandae, debitis perspiciatis autem! Optio, ratione?</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="bsasOctubre" id="lugarfecha">
+                <img class="sectionHonolulu" src="./assets/img/honolulu.jpg" alt="Imagen de una playa en Honolulu" width="600" loading="lazy">
+                <div class="honoluluText">
+                    <h2>Bs As - Octubre</h2>
+                    <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).</p>
+                    <div class="conoceMas">
+                        <a class="colorWhite listaLink" href="./pages/404.html">Conocé más</a>
+                    </div>
+                </div>
+            </section>
+
+            <section  class="formularioOrador" id="formularioOrador">
+                <h2 class="titleForm"><div>CONVIÉRTETE EN UN</div>ORADOR</h2>
+                <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+                <form action="./pages/404.html">
+                    <div class="textName">
+                        <input type="text" id="name" cols="10" rows="5" name="name" placeholder="Nombre" required>
+                        <input type="text" id="surname" cols="10" rows="5"name="surname" placeholder="Apellido" required>
+                    </div>
+
+                    <div>
+                        <textarea class="textArea"name="comentario" id="comentario" cols="50" rows="5" placeholder="Sobre qué quieres hablar?" required></textarea>
+                    </div>
+                    <div>
+                        <p>Recuerda incluir un título para tu charla</p>
+                    </div>
+
+                    <div>
+                        <input class="send" type="submit" value="Enviar">
+                    </div>
+                </form>
+
+            </section>
+
+        </main>
+        <aside>
+            <p>PUBLICIDAD</p>
+            <div>
+                <a href=""><img src="" alt=""></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+            </div>
+            <div>
+                <a href=""><img src="" alt=""></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div>
+                <a href=""><img src="" alt=""></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+            </div>
+        </aside>
+
+        <footer>
+            <nav>
+                <ul class="footer">
+                    <li class="footerList"><a class="colorWhite listaLink" href="./pages/404.html">Preguntas frecuentes</a></li>
+                    <li class="footerList"><a class="colorWhite listaLink" href="./pages/404.html">Contáctanos</a></li>
+                    <li class="footerList"><a class="colorWhite listaLink" href="./pages/404.html">Prensa</a></li>
+                    <li class="footerList"><a class="colorWhite listaLink" href="./pages/404.html">Conferencias</a></li>
+                    <li class="footerList"><a class="colorWhite listaLink" href="./pages/404.html">Términos y condiciones</a></li>
+                    <li class="footerList"><a class="colorWhite listaLink" href="./pages/404.html">Privacidad</a></li>
+                    <li class="footerList"><a class="colorWhite listaLink" href="./pages/404.html">Estudiantes</a></li>
+                </ul>
+            </nav>
+
+        </footer>
+        
+    </body>
+</html>
