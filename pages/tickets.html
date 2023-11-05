@@ -3,56 +3,161 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Proyecto integrador Front | Tali Walkiria Itkin</title>
+        <title>Proyecto integrador JavaScript | Tali Walkiria Itkin</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
-        <header>
-            <a href="../index.html">
-                <img src="../assets/img/codoacodo.png " alt="logo de codo a codo 2.0">
-            </a>
-            
-            <h2>Conf Bs As</h2>
-            <nav>
-                <ul>
-                    <li><a href="../index.html#conferencia">La conferencia</a></li>
-                    <li><a href="../index.html#oradores">Los oradores</a></li>
-                    <li><a href="../index.html#lugarfecha">El lugar y la fecha</a></li>
-                    <li><a href="../index.html#formularioOrador">Conviértete en orador</a></li>
-                    <li><a href="#">Comprar tickets</a></li>
-                </ul>
+        <header class="header">
+            <nav class="headerNav navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid w-100">
+                    <a class="navbar-brand justify-content-start" href="../index.html">
+                        <img src="../assets/img/codoacodo.png" alt="logo de codo a codo 2.0">
+                        Conf Bs As
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="fw-light nav-link" href="../index.html#conferencia">La conferencia</a></li>
+                            <li class="nav-item"><a class="fw-light nav-link" href="../index.html#oradores">Los oradores</a></li>
+                            <li class="nav-item"><a class="fw-light nav-link" href="../index.html#lugarfecha">El lugar y la fecha</a></li>
+                            <li class="nav-item"><a class="fw-light nav-link" href="../index.html#formularioOrador">Conviértete en orador</a></li>
+                            <li class="nav-item"><a class="fw-light colorGreen nav-link active" aria-current="page" href="#">Comprar tickets</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <section id="conferencia">
-                <h1>Conferencia Bs As</h1>
-                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a los miembros del evento, otros compañeros de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te esperamos!</p>
-                <a href="../index.html#formularioOrador"">Quiero ser orador</a>
-                <a href="../pages/tickets.html">Comprar tickets</a>
-            </section>
         </header>
         
-       
-        <aside>
-            <p>PUBLICIDAD</p>
-            <div>
-                <a href=""><img src="" alt=""></a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <main>
+            <section class="p-4 container pt-selection">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
 
+                        <div class="row row-cols-1 row-cols-md-3 text-center">
+                            <div class="descuento col" id="estudiante">
+
+                                    <div class="hover mb-4 rounded-3 shadow-sm border-primary">
+                                    <div class="card-header py-3 shadow-sm bg-primary border-primary">
+                                        <h4 class="my-0 fw-normal">Estudiante</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Tienen un descuento</p>
+                                        <h3 class="card-title pricing-card-title">80%</h3>
+                                        <small class="fw-light text-muted mt-3">*Presentar documentación</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="descuento col" id="trainee">
+                                <div class="hover mb-4 rounded-3 shadow-sm border-info">
+                                    <div class="card-header py-3 text-white bg-info border-info">
+                                        <h4 class="my-0 fw-normal">Trainee</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Tienen un descuento</p>
+                                        <h3 class="card-title pricing-card-title">50%</h3>
+                                        <small class="fw-light text-muted mt-3">*Presentar documentación</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col descuento" id="Junior">
+                                <div class="hover mb-4 rounded-3 shadow-sm border-warning">
+                                    <div class="card-header py-3 bg-warning border-warning">
+                                        <h4 class="my-0 fw-normal">Junior</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Tienen un descuento</p>
+                                        <h3 class="card-title pricing-card-title">15%</h3>
+                                        <small class="fw-light text-muted mt-3">*Presentar documentación</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="container titulo-gral text-center small text-uppercase">
+                            Venta <div class="h2 fw-semi-bold">Valor de ticket $2000</div>
+                        </h2>
+                        
+                        <form action="">
+                            <div class="row gx-2">
+                                <div class="col-md mb-3">
+                                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre">
+                                    <div class="invalid-feedback" id="mensajeErrorNombre">
+                                        <p>Ingrese su Nombre</p>
+                                    </div>
+                                </div>
+                                <div class="col-md mb-3">
+                                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido">
+                                    <div class="invalid-feedback" id="mensajeErrorApellido">
+                                        <p>Ingrese su Apellido</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mb-3">
+                                    <input type="email" class="form-control" placeholder="Correo" aria-label="Correo" id="mail">
+                                    <div class="invalid-feedback" id="mensajeErrorMail">
+                                        <p>Ingrese su correo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gx-2">
+                                <div class="col-md mb-3">
+                                    <label for="cantidadTickets" class="form-label">Cantidad</label>
+                                    <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad" id="cantidadTickets" required>
+                                    <div class="invalid-feedback" id="mensajeErrorCantidad">
+                                        <p>Ingrese una cantidad</p>
+                                    </div>
+                                </div>
+                                <div class="col-md mb-3">
+                                    <label for="categoriaSelect" class="form-label">Categoría</label>
+                                    <select class="form-select" aria-label="Categoría" id="categoriaSelect">
+                                        <option value="" selected>- Seleccione -</option>
+                                        <option value="0">Sin Categoría</option>
+                                        <option value="1"><span id="seleccionarEstudiantes">Estudiante</span></option>
+                                        <option value="2">Trainee</option>
+                                        <option value="3">Junior</option>
+                                    </select>
+                                    <div class="invalid-feedback" id="mensajeErrorCategoria">
+                                        <p>Ingrese una categoría</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="alert alert-primary mt-2 mb-4" role="alert">
+                            Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+                        </div>
+                        <div class="row gx-2">
+                            <div class="col-md mb-3">
+                                <button type="reset" class="send w-100 btn btn-lg btn-form" id="btnBorrar">Borrar</button>
+                            </div>
+                            <div class="col-md mb-3">
+                                <button" type="button" class="send w-100 btn btn-lg btn-form" id="btnResumen">Resumen</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div>
-                <a href=""><img src="" alt=""></a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul class="footer">
+                <li class="footerList"><a class="fw-light colorWhite listaLink" href="./pages/404.html">Preguntas frecuentes</a></li>
+                <li class="footerList"><a class="fw-light colorWhite listaLink" href="./pages/404.html">Contáctanos</a></li>
+                <li class="footerList"><a class="fw-light colorWhite listaLink" href="./pages/404.html">Prensa</a></li>
+                <li class="footerList"><a class="fw-light colorWhite listaLink" href="./pages/404.html">Conferencias</a></li>
+                <li class="footerList"><a class="fw-light colorWhite listaLink" href="./pages/404.html">Términos y condiciones</a></li>
+                <li class="footerList"><a class="fw-light colorWhite listaLink" href="./pages/404.html">Privacidad</a></li>
+                <li class="footerList"><a class="fw-light colorWhite listaLink" href="./pages/404.html">Estudiantes</a></li>
+            </ul>
+        </nav>
 
-            </div>
-            <div>
-                <a href=""><img src="" alt=""></a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-
-            </div>
-        </aside>
-
-        <footer>
-
-        </footer>
-        
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script> 
+    <script src="../js/tickets.js"></script>
     </body>
 </html>
